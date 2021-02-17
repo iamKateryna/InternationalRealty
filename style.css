@@ -21,9 +21,10 @@
 
 .wrapper {
   	height: 350px;
-  	margin: 100px auto 0;
+  	margin: 40px auto 0;
   	position: relative;
   	width: 700px;
+
 }
 
 .slider {
@@ -58,12 +59,22 @@
 .slide3 { background-image: url(http://habrastorage.org/files/663/6b1/d4f/6636b1d4f8e643d29eab8c192fc1cea3.jpg); }
 .slide4 { background-image: url(http://habrastorage.org/files/e59/424/c04/e59424c046be4dab897d84ab015c87ea.jpg); }
 .slide5 { background-image: url(http://habrastorage.org/files/53c/ff6/c1c/53cff6c1caf842368c70b8ef892d8402.jpg); }
+.slide6 { background-image: url(https://images.finance.ua/imgs/a6/e2/a6e25691e596c5840d0aa816d291ee91.jpg); }
+.slide7 { background-image: url(https://static.ukrinform.com/photos/2016_09/1474285239-1654.png); }
+.slide8 { background-image: url(https://www.real-lviv.com.ua/img/news/26.jpg); }
+.slide9 { background-image: url(http://minfin.com.ua/img/2020/40697563/38b55f806b9dd9722fc8ac5e23c487e5.jpeg); }
+.slide10 { background-image: url(https://kurs.if.ua/wp-content/uploads/2020/08/foto-dlya-golovnoyi-1-740x416.jpg); }
 
 #slide1:checked ~ .slider > .slide1,
 #slide2:checked ~ .slider > .slide2,
 #slide3:checked ~ .slider > .slide3,
 #slide4:checked ~ .slider > .slide4,
-#slide5:checked ~ .slider > .slide5 {
+#slide5:checked ~ .slider > .slide5,
+#slide6:checked ~ .slider > .slide6,
+#slide7:checked ~ .slider > .slide7,
+#slide8:checked ~ .slider > .slide8,
+#slide9:checked ~ .slider > .slide9,
+#slide10:checked ~ .slider > .slide10 {
   	opacity: 1;
   	z-index: 1;
   	-webkit-transform: scale(1);
@@ -97,6 +108,7 @@
   	-moz-transition: background ease-in-out .5s;
   	-o-transition: background ease-in-out .5s;
   	transition: background ease-in-out .5s;
+
 }
 
 .wrapper label:hover,
