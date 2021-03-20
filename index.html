@@ -5,6 +5,8 @@
         <title> Gipsy ltd. International Reality </title>
         <link rel='stylesheet' type="text/css" href='normalize.css'>
         <link rel='stylesheet' type="text/css" href='style_aboutus.css'>
+        <link rel="stylesheet" type="text/css" href="gispy_style.css">
+        <link rel="stylesheet" type="text/css" href="gispy_style1.css">
         <link rel="stylesheet" href="css/gallery.theme.css">
         <link rel="stylesheet" href="css/gallery.min.css">
     </head>
@@ -28,7 +30,7 @@
         </header>
         <main>
             <div class = 'boxes '>
-            <h1>About Us</h1>
+                <h1>About Us</h1>
             
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet lectus ut massa gravida, nec placerat
                 </p><p>mauris cursus. Nullam semper congue neque eu malesuada. Fusce sodales leo neque, vel suscipit purus
@@ -36,6 +38,50 @@
                 </p><p>amet ornare sem. Aliquam vestibulum libero elit, sed elementum nisi sodales a. In vulputate, arcu nec
                 </p><p>tempus tempor, lacus augue fermentum felis, vel vestibulum ligula metus ut odio. Sed eget augue auctor
                 </p><p>ipsum maximus egestas eu ut libero. </p>
+            </div>
+            <div class="boxes">
+                <section class="section slider">
+
+                  <input type="radio" name="slider" id="slide-1" class="slider__radio" >
+                  <input type="radio" name="slider" id="slide-2" class="slider__radio" checked>
+                  <input type="radio" name="slider" id="slide-3" class="slider__radio">
+
+                  <div class="slider__holder">
+                    <label for="slide-1" class="slider__item slider__item--1 card1">
+                      <div class="slider__item-content">
+                        <p class="heading-3 heading-3--light">.</p>
+                        <p class="heading-3">.</p>
+                        <p class="slider__item-text serif">
+                          .
+                        </p>
+                      </div>
+                    </label>
+
+                    <label for="slide-2" class="slider__item slider__item--2 card2">
+                      <div class="slider__item-content">
+                        <p class="heading-3 heading-3--light">.</p>
+                        <p class="heading-3">.</p>
+                        <p class="slider__item-text serif">
+                        </p>
+                      </div>
+                    </label>
+
+                    <label for="slide-3" class="slider__item slider__item--3 card3">
+                      <div class="slider__item-content">
+                        <p class="heading-3 heading-3--light">.</p>
+                        <p class="heading-3">.</p>
+                        <p class="slider__item-text serif">
+                        </p>
+                      </div>
+                    </label>
+                  </div><!-- slider__holder -->
+                  <div class="bullets">
+                      <label for="slide-1" class="bullets__item bullets__item--1"></label>
+                      <label for="slide-2" class="bullets__item bullets__item--2"></label>
+                      <label for="slide-3" class="bullets__item bullets__item--3"></label>
+
+                  </div> <!-- Bullets -->
+                </section>
             </div>
             <div class='boxes'>
                 <h1>Our Clients</h1>
@@ -48,31 +94,29 @@
             </div>
             <div class='boxes'>
                 <h1>Contact us</h1><br>
-                <table width="100%">
-
-                    <tr>
-
-                        <th style='width:50%' class='forms' >
-                            <input type="text" size="40%" placeholder="Your name"></p>
-                            <input type="text" size="40%" placeholder="Your phone"></p>
-                            <input type="text" size="40%" placeholder="Your e-mail"></p>
-                            <p style = 'margin-top: 4%;margin-bottom: 4%'>Call me at:
-                                <select>
-                                    <option value='r1'> 08:00-12:00 </option>
-                                    <option value='r2'> 12:00-16:00 </option> 
-                                    <option value='r3'> 16:00-20:00 </option>
-                                    <option value='r4'> 20:00-24:00 </option> 
-                                </select>
-                            </p>
-                            <input type="button" value=" Accept " class = 'accept-button'>
-                        <th style="width: 50%">
-
-                            <p style='margin-left :20%;margin-right: 20%'>Vivamus in bibendum nisl. Nunc auctor elit enim, ut pretium nunc finibus eget. Maecenas placerat nulla ac placerat molestie. Quisque eu lectus laoreet, aliquam ante quis, elementum metus. Pellentesque et bibendum nunc. Nulla non nisi ac elit commodo cursus.</p>
-                        </th>
-                    </tr>
-                </table>
+                <div class="clearfix">
+                    <div  style="float: left; width: 300px; min-width:25%; max-width: 50%">
+                        <input type="text" style="width: 250px;" placeholder="Your name"></p>
+                        <input type="text" style="width: 250px;" placeholder="Your phone"></p>
+                        <input type="text" style="width: 250px;" placeholder="Your e-mail"></p>
+                        <p style = 'margin-top: 4%;margin-bottom: 4%'>Call me at:
+                            <select>
+                                <option value='r1'> 08:00-12:00 </option>
+                                <option value='r2'> 12:00-16:00 </option> 
+                                <option value='r3'> 16:00-20:00 </option>
+                                <option value='r4'> 20:00-24:00 </option> 
+                            </select>
+                        </p>
+                    </div>
+                    <div  style="float: left; min-width:200px; width: 600px">
+                        <p  font-size: 18px'>Vivamus in bibendum nisl. Nunc auctor elit enim, ut pretium nunc finibus eget. Maecenas placerat nulla ac placerat molestie. Quisque eu lectus laoreet, aliquam ante quis, elementum metus. Pellentesque et bibendum nunc. Nulla non nisi ac elit commodo cursus.</p>
+                    </div>
+                </div>
+                <input type="button" value=" Accept " class = 'accept-button'>
             </div>
+
         </main>
+
         <footer>
             <div class="ftr">
                 <p> All rights are not reserved</p>
