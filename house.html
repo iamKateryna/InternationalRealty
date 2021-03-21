@@ -1,47 +1,61 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-	    <title> Gipsy ltd. International Reality </title>
-	    <link rel='stylesheet' type="text/css" href='normalize.css'>
-	    <link rel="stylesheet" type="text/css" href="style_house.css">
-	    <link rel="stylesheet" href="css/gallery.theme.css">
-        <link rel="stylesheet" href="css/gallery.min.css">
-    </head>
-    <body>
-	    <header class = 'site-header'>
-            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
-            <div class="hamburger-menu">
-                <input id="menu__toggle" type="checkbox" />
-                <label class="menu__btn" for="menu__toggle">
-                    <span></span>
-                </label>
+<html lang="en">
+<head>
+    <title> Search </title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type="text/css" href='normalize.css'>
+    <link rel='stylesheet' type="text/css" href='style_house.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade&family=Work+Sans:wght@300&family=Work+Sans:wght@400&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div id="page-container">
+    <header class = 'header'>
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
 
-                <ul class="menu__box">
-                    <li><a class="menu__item" href="#">About us</a></li>
-                    <li><a class="menu__item" href="#">Top choices</a></li>
-                    <li><a class="menu__item" href="#">Search</a></li>
-                    <li><a class="menu__item" href="#">Our clients</a></li>
-                    <li><a class="menu__item" href="#">Contact us</a></li>
-                </ul>
-            </div>
-        </header>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="index.html#about">About us</a></li>
+                <li><a class="menu__item" href="index.html#choice">Top choices</a></li>
+                <li><a class="menu__item" href="search.html">Search</a></li>
+                <li><a class="menu__item" href="index.html#our">Our clients</a></li>
+                <li><a class="menu__item" href="index.html#cu">Contact us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="content-wrap">
         <main>
-            <div class="h1">
-            <h1>Name Name Name Name</h1>
+            <div class="heading">
+                <div class="name">
+                	Ternopil Palazio
+                </div>
+                <div class="price">
+                	$ 50 000 000
+                </div>
             </div>
-            <img src="images/house1.png" alt="House 1" width="50%" height="50%" class='photo' align="center">
+            <div class="photos">
+            	<div class="big-photo"></div>
+            	<div class="small-photos">
+            		<div class="small-1"></div>
+            		<div class="small-2"></div>
+            		<div class="small-3"></div>
+            	</div>
+            </div>
             <div class = 'boxes'>
-                <p>Proin maximus enim metus, a pulvinar ex mattis id. In eu congue lectus. Pellentesque non lacus vel nunc porttitor malesuada eu vel ante. Vestibulum gravida felis
-                </p><p>diam, id tincidunt orci semper iaculis. Integer eu iaculis risus. Vivamus ante arcu, efficitur vitae massa ut, mattis malesuada eros. Nulla auctor nibh turpis,
-                </p><p>ac suscipit felis pulvinar non. Fusce ac porta risus. Sed id dolor suscipit, ornare neque at, tristique ante. Curabitur tristique placerat urna, vel tincidunt mi feugiat
-                </p><p>non. Suspendisse sit amet nisl neque.</p>
+                <p id="box-text">
+                	Fusce eu arcu lacinia, suscipit urna non, varius nulla. Sed non velit egestas, aliquet nisi eget, elementum metus. Aenean sit amet diam et nulla finibus euismod. Aliquam augue augue, ullamcorper non ante in, porta vestibulum nibh. Morbi id luctus velit. Etiam venenatis fermentum pretium. Etiam erat erat, consectetur nec tempus at, varius pulvinar risus. Mauris est ante, sollicitudin vel orci vel, tempor dignissim ante. Vivamus felis nulla, posuere eu lacus a, viverra rhoncus lorem. Pellentesque sed interdum leo. Vivamus tincidunt, mi in tempus hendrerit, arcu ipsum sagittis turpis, eu pellentesque sapien nunc sed sem. Suspendisse faucibus sodales sem, a rutrum ipsum tincidunt eget. Proin quam elit, tristique ac augue faucibus, tempus interdum libero. Ut aliquam ligula nisl, id bibendum arcu iaculis ut. Ut posuere orci felis. Donec vel auctor felis.
+                </p>
             </div>
         </main>
-        <footer>
-            <div class="ftr">
-                <p> All rights are not reserved</p>
-            </div>
-        </footer>
-    </body>
+    </div>
+    <footer id="footer">
+            <p> © All rights reserved</p>
+    </footer>
+</div>
+</body>
 </html>
