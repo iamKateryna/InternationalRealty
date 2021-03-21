@@ -9,8 +9,9 @@
         <link rel="stylesheet" type="text/css" href="gispy_style1.css">
         <link rel="stylesheet" href="css/gallery.theme.css">
         <link rel="stylesheet" href="css/gallery.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Scheherazade&Work+Sans:wght@300&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body  id="about">
         <header class = 'site-header'>
             <a href="index.html"><img src="images/logo.png" alt="logo"></a>
             <div class="hamburger-menu">
@@ -20,27 +21,27 @@
                 </label>
 
                 <ul class="menu__box">
-                    <li><a class="menu__item" href="#">About us</a></li>
-                    <li><a class="menu__item" href="#">Top choices</a></li>
-                    <li><a class="menu__item" href="#">Search</a></li>
-                    <li><a class="menu__item" href="#">Our clients</a></li>
-                    <li><a class="menu__item" href="#">Contact us</a></li>
+                    <li><a class="menu__item" href="#about">About us</a></li>
+                    <li><a class="menu__item" href="#choice">Top choices</a></li>
+                    <li><a class="menu__item" href="search.html">Search</a></li>
+                    <li><a class="menu__item" href="#our">Our clients</a></li>
+                    <li><a class="menu__item" href="#cu">Contact us</a></li>
                 </ul>
             </div>
         </header>
         <main>
-            <div class = 'boxes '>
-                <h1>About Us</h1>
+            <div class = 'boxes 'style = 'margin-top: 90px'>
+                <p style = 'font-size: 64px; margin:15px 0px 15px; line-height: 75px;'>About Us</p>
             
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet lectus ut massa gravida, nec placerat
-                </p><p>mauris cursus. Nullam semper congue neque eu malesuada. Fusce sodales leo neque, vel suscipit purus
-                </p><p>porta id. Nam vehicula augue consectetur, ultricies metus a, semper mauris. Etiam ut venenatis odio, sit
-                </p><p>amet ornare sem. Aliquam vestibulum libero elit, sed elementum nisi sodales a. In vulputate, arcu nec
-                </p><p>tempus tempor, lacus augue fermentum felis, vel vestibulum ligula metus ut odio. Sed eget augue auctor
-                </p><p>ipsum maximus egestas eu ut libero. </p>
+                <p style = 'padding:0 80px 0 80px ;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet lectus ut massa gravida, nec placerat
+                mauris cursus. Nullam semper congue neque eu malesuada. Fusce sodales leo neque, vel suscipit purus
+                porta id. Nam vehicula augue consectetur, ultricies metus a, semper mauris. Etiam ut venenatis odio, sit
+                amet ornare sem. Aliquam vestibulum libero elit, sed elementum nisi sodales a. In vulputate, arcu nec
+                tempus tempor, lacus augue fermentum felis, vel vestibulum ligula metus ut odio. Sed eget augue auctor
+                ipsum maximus egestas eu ut libero. </p>
             </div>
-            <div class="boxes">
-                <section class="section slider">
+            <div id="choiсe"> </div>
+            <section class="section slider">
 
                   <input type="radio" name="slider" id="slide-1" class="slider__radio" >
                   <input type="radio" name="slider" id="slide-2" class="slider__radio" checked>
@@ -81,36 +82,41 @@
                       <label for="slide-3" class="bullets__item bullets__item--3"></label>
 
                   </div> <!-- Bullets -->
-                </section>
-            </div>
+            </section>
+            <div id="our"> </div>
             <div class='boxes'>
-                <h1>Our Clients</h1>
-                <p>Pellentesque eget finibus nulla, in blandit dolor. Cras non porttitor ipsum. Vestibulum sit amet faucibus</p>    
-                <p>nulla, aliquet commodo quam. Ut sit amet orci lacinia tellus egestas vestibulum suscipit vel magna.</p>
+                <p style = 'font-size: 64px; margin:15px 0px 15px; line-height: 75px'>Our Clients</p>
+                <p style = 'padding:0 80px 0 80px ;'>Pellentesque eget finibus nulla, in blandit dolor. Cras non porttitor ipsum. Vestibulum sit amet faucibus
+                nulla, aliquet commodo quam. Ut sit amet orci lacinia tellus egestas vestibulum suscipit vel magna.</p>
                 <img src="images/netflix.png" alt="Фотография 1" width="15%" height="15%" class='photo' align="center">
                 <img src="images/harem.png" alt="Фотография 2" width="15%" height="15%" class='photo' align="center">
                 <img src="images/princess.png" alt="Фотография 3" width="15%" height="15%" class ='photo' align="center">
                 <img src="images/cabmin.png" alt="Фотография 4" width="15%" height="15%" class ='photo' align="center">
             </div>
+            <div id="cu"> </div>
             <div class='boxes'>
-                <h1>Contact us</h1><br>
-                <div class="clearfix">
-                    <div  style="float: left; width: 300px; min-width:25%; max-width: 50%">
-                        <input type="text" style="width: 250px;" placeholder="Your name"></p>
-                        <input type="text" style="width: 250px;" placeholder="Your phone"></p>
-                        <input type="text" style="width: 250px;" placeholder="Your e-mail"></p>
-                        <p style = 'margin-top: 4%;margin-bottom: 4%'>Call me at:
-                            <select>
-                                <option value='r1'> 08:00-12:00 </option>
-                                <option value='r2'> 12:00-16:00 </option> 
-                                <option value='r3'> 16:00-20:00 </option>
-                                <option value='r4'> 20:00-24:00 </option> 
-                            </select>
-                        </p>
+                <p style = 'font-size: 64px; margin:15px 0px 15px; line-height: 75px'>Contact us</p><br>
+                <div class="form">
+                    <div class="container">
+                        <label for="test">Your name:</label>
+                        <span><input  name="test" id="test" type="text" /></span>
                     </div>
-                    <div  style="float: left; min-width:200px; width: 600px">
-                        <p  font-size: 18px'>Vivamus in bibendum nisl. Nunc auctor elit enim, ut pretium nunc finibus eget. Maecenas placerat nulla ac placerat molestie. Quisque eu lectus laoreet, aliquam ante quis, elementum metus. Pellentesque et bibendum nunc. Nulla non nisi ac elit commodo cursus.</p>
+                    <div class="container">
+                        <label for="test">Your Phone:</label>
+                        <span><input  name="test" id="test" type="text" /></span>
                     </div>
+                    <div class="container">
+                        <label for="test">Your e-mail:</label>
+                        <span><input  name="test" id="test" type="text" /></span>
+                    </div>
+                    <p style = 'margin-top: 4%;margin-bottom: 4%;'>Call me at:
+                        <select>
+                            <option value='r1'> 08:00-12:00 </option>
+                            <option value='r2'> 12:00-16:00 </option> 
+                            <option value='r3'> 16:00-20:00 </option>
+                            <option value='r4'> 20:00-24:00 </option> 
+                        </select>
+                    </p>
                 </div>
                 <input type="button" value=" Accept " class = 'accept-button'>
             </div>
@@ -119,7 +125,7 @@
 
         <footer>
             <div class="ftr">
-                <p> All rights are not reserved</p>
+                <p style="padding-top: 27.115px;"> All rights are not reserved</p>
             </div>
         </footer>
     </body>
