@@ -39,6 +39,16 @@
                 setTimeout(show_slides, 2000)
             }
         </script>
+        <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+        <script>
+            $(document).ready(function() { PopUpHide(); } );
+            function PopUpShow(){
+                $("#popup1").show();
+            }
+            function PopUpHide(){
+                $("#popup1").hide();
+            }
+        </script>
     </head>
     <body  id="about">
         <header class = 'site-header'>
@@ -202,9 +212,14 @@
                         </select>
                     </p>
                 </div>
-                <input type="button" value=" Accept " class = 'accept-button'>
+                <a href= "javascript:PopUpShow()"><input  type="button" value=" Accept " class = 'accept-button'></a>
             </div>
-
+            <div class="b-popup" id="popup1">
+                <div class="b-popup-content">
+                   <p>Successful</p>
+                <a href="javascript:PopUpHide()"><input  type="button" value=" Close " class = 'accept-button'></a>
+            </div>
+            </div>
         </main>
 
         <footer>
