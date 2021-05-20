@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="gispy_style2.css">
+    <!--<link rel="stylesheet" type="text/css" href="gispy_style1.css">-->
+    <script>
+        var slide_index = 0;
+        show_slides();
+        var i = 0;
+
+        function show_slides(){
+            //var i = 0;
+            var slides = document.getElementsByClassName("slider__radio");
+            if (i==3){
+                i = 0;
+            }
+            //document.getElementById("slide-"+(i+1)).checked = true;
+            if(i==0){
+                console.log(document.getElementById('slide-1'))
+                document.getElementById('slide-1').checked = true;
+            }
+            if(i==1){
+                console.log(document.getElementById('slide-2'))
+                document.getElementById('slide-2').checked = true;
+            }
+            if(i==2){
+                console.log(document.getElementById('slide-3'))
+                document.getElementById('slide-3').checked = true;
+            }
+            i++;
+            setTimeout(show_slides, 2000)
+        }
+
+    </script>
+</head>
+<body>
+<section class="section slider">
+
+    <input type="radio" name="slider" id="slide-1" class="slider__radio" >
+    <input type="radio" name="slider" id="slide-2" class="slider__radio" checked>
+    <input type="radio" name="slider" id="slide-3" class="slider__radio">
+
+    <div class="slider__holder">
+        <label for="slide-1" class="slider__item slider__item--1 card1">
+            <div class="slider__item-content">
+                <p class="heading-3 heading-3--light">.</p>
+                <p class="heading-3">.</p>
+                <p class="slider__item-text serif">
+                    .
+                </p>
+				<div class="slider__text">
+						All types!
+				</div>
+            </div>
+        </label>
+
+        <label for="slide-2" class="slider__item slider__item--2 card2">
+            <div class="slider__item-content">
+                <p class="heading-3 heading-3--light">.</p>
+                <p class="heading-3">.</p>
+                <p class="slider__item-text serif">
+                    .
+                </p>
+				 <div class="slider__text">
+						Buy your own real estate!
+				</div>
+            </div>
+        </label>
+
+        <label for="slide-3" class="slider__item slider__item--3 card3">
+            <div class="slider__item-content">
+                <p class="heading-3 heading-3--light">.</p>
+                <p class="heading-3">.</p>
+                <p class="slider__item-text serif">
+                    .
+                </p>
+				<div class="slider__text">
+						From the north to the south!
+				</div>
+            </div>
+        </label>
+    </div><!-- slider__holder -->
+    <div class="bullets">
+
+        <label for="slide-1" class="bullets__item bullets__item--1"></label>
+        <label for="slide-2" class="bullets__item bullets__item--2"></label>
+        <label for="slide-3" class="bullets__item bullets__item--3"></label>
+
+
+    </div> <!-- Bullets -->
+</section>
+</body>
+</html>

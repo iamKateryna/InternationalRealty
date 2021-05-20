@@ -6,10 +6,39 @@
         <link rel='stylesheet' type="text/css" href='normalize.css'>
         <link rel='stylesheet' type="text/css" href='style_aboutus.css'>
         <link rel="stylesheet" type="text/css" href="gispy_style.css">
+        <link rel="stylesheet" type="text/css" href="gispy_style2.css">
         <link rel="stylesheet" type="text/css" href="gispy_style1.css">
         <link rel="stylesheet" href="css/gallery.theme.css">
         <link rel="stylesheet" href="css/gallery.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Scheherazade&Work+Sans:wght@300&display=swap" rel="stylesheet">
+        <script>
+            var slide_index = 0;
+            show_slides();
+            var i = 0;
+
+            function show_slides(){
+                //var i = 0;
+                var slides = document.getElementsByClassName("slider__radio");
+                if (i==3){
+                    i = 0;
+                }
+                //document.getElementById("slide-"+(i+1)).checked = true;
+                if(i==0){
+                    console.log(document.getElementById('slide-1'))
+                    document.getElementById('slide-1').checked = true;
+                }
+                if(i==1){
+                    console.log(document.getElementById('slide-2'))
+                    document.getElementById('slide-2').checked = true;
+                }
+                if(i==2){
+                    console.log(document.getElementById('slide-3'))
+                    document.getElementById('slide-3').checked = true;
+                }
+                i++;
+                setTimeout(show_slides, 2000)
+            }
+        </script>
     </head>
     <body  id="about">
         <header class = 'site-header'>
@@ -41,7 +70,7 @@
                 ipsum maximus egestas eu ut libero. </p>
             </div>
             <div id="choiсe"> </div>
-            <section class="section slider">
+<!--             <section class="section slider">
 
                   <input type="radio" name="slider" id="slide-1" class="slider__radio" >
                   <input type="radio" name="slider" id="slide-2" class="slider__radio" checked>
@@ -75,23 +104,78 @@
                         </p>
                       </div>
                     </label>
-                  </div><!-- slider__holder -->
+                  </div>
                   <div class="bullets">
                       <label for="slide-1" class="bullets__item bullets__item--1"></label>
                       <label for="slide-2" class="bullets__item bullets__item--2"></label>
                       <label for="slide-3" class="bullets__item bullets__item--3"></label>
 
-                  </div> <!-- Bullets -->
+                  </div> 
+            </section> -->
+            <section class="section slider">
+
+                <input type="radio" name="slider" id="slide-1" class="slider__radio" >
+                <input type="radio" name="slider" id="slide-2" class="slider__radio" checked>
+                <input type="radio" name="slider" id="slide-3" class="slider__radio">
+
+                <div class="slider__holder">
+                    <label for="slide-1" class="slider__item slider__item--1 card1">
+                        <div class="slider__item-content">
+                            <p class="heading-3 heading-3--light">.</p>
+                            <p class="heading-3">.</p>
+                            <p class="slider__item-text serif">
+                                .
+                            </p>
+                            <div class="slider__text">
+                                    All types!
+                            </div>
+                        </div>
+                    </label>
+
+                    <label for="slide-2" class="slider__item slider__item--2 card2">
+                        <div class="slider__item-content">
+                            <p class="heading-3 heading-3--light">.</p>
+                            <p class="heading-3">.</p>
+                            <p class="slider__item-text serif">
+                                .
+                            </p>
+                             <div class="slider__text">
+                                    Buy your own real estate!
+                            </div>
+                        </div>
+                    </label>
+
+                    <label for="slide-3" class="slider__item slider__item--3 card3">
+                        <div class="slider__item-content">
+                            <p class="heading-3 heading-3--light">.</p>
+                            <p class="heading-3">.</p>
+                            <p class="slider__item-text serif">
+                                .
+                            </p>
+                            <div class="slider__text">
+                                    From the north to the south!
+                            </div>
+                        </div>
+                    </label>
+                </div><!-- slider__holder -->
+                <div class="bullets">
+
+                    <label for="slide-1" class="bullets__item bullets__item--1"></label>
+                    <label for="slide-2" class="bullets__item bullets__item--2"></label>
+                    <label for="slide-3" class="bullets__item bullets__item--3"></label>
+
+
+                </div> <!-- Bullets -->
             </section>
             <div id="our"> </div>
             <div class='boxes'>
                 <p style = 'font-size: 64px; margin:15px 0px 15px; line-height: 75px'>Our Clients</p>
                 <p style = 'padding:0 80px 0 80px ;'>Pellentesque eget finibus nulla, in blandit dolor. Cras non porttitor ipsum. Vestibulum sit amet faucibus
                 nulla, aliquet commodo quam. Ut sit amet orci lacinia tellus egestas vestibulum suscipit vel magna.</p>
-                <img src="images/netflix.png" alt="Фотография 1" width="15%" height="15%" class='photo' align="center">
-                <img src="images/harem.png" alt="Фотография 2" width="15%" height="15%" class='photo' align="center">
-                <img src="images/princess.png" alt="Фотография 3" width="15%" height="15%" class ='photo' align="center">
-                <img src="images/cabmin.png" alt="Фотография 4" width="15%" height="15%" class ='photo' align="center">
+                <a href = "https://www.netflix.com/ua-ru/"><img  src="images/netflix.png" alt="Фотография 1" width="15%" height="15%" class='photo' align="center">
+                <a href = "http://harem.com.ua/en" ><img src="images/harem.png" alt="Фотография 2" width="15%" height="15%" class='photo' align="center">
+                <a href = "https://princessclub.kiev.ua/uk/"  ><img src="images/princess.png" alt="Фотография 3" width="15%" height="15%" class ='photo' align="center">
+                <a href = "https://www.kmu.gov.ua/"  ><img src="images/cabmin.png" alt="Фотография 4" width="15%" height="15%" class ='photo' align="center"></a>
             </div>
             <div id="cu"> </div>
             <div class='boxes'>
