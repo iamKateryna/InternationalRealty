@@ -31,7 +31,7 @@
     <div id="content-wrap">
         <main>
             <div class="heading">
-            	<p align="center" style="margin-bottom: 0px; margin-top: 80px;" >For those who seek an exceptional life</p>
+            	<p style="margin-bottom: 0px; margin-top: 80px;" >For those who seek an exceptional life</p>
             </div>
             <div class="filters">
                 <select class="bblock">
@@ -91,50 +91,60 @@
                 </select>
                 <a href="search_2layout.html" class="button">Change view</a> 
             </div>
+            <br>
 
+            <div class="slideshow-container">
 
-            <div class="boxes">
-                <section class="section slider">
+                <div class="mySlides fade">
+                    <img src="https://img.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fsir.azureedge.net%2F977i215%2Fwdjwc8h0fttgmqewamj5nw8sd0i215&option=N&h=536&permitphotoenlargement=false" style="width:100%">
+                    <div class="text_img">Looks like a dream? Make it real!</div>
+                </div>
 
-                    <input type="radio" name="slider" id="slide-1" class="slider__radio" >
-                    <input type="radio" name="slider" id="slide-2" class="slider__radio" checked>
-                    <input type="radio" name="slider" id="slide-3" class="slider__radio">
+                <div class="mySlides fade">
+                    <img src="https://img.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fsir.azureedge.net%2F977i215%2Fa4ydpcgsnem54d28dxrq0b0vf3i215&option=N&h=406&permitphotoenlargement=false" style="width:100%">
+                    <div class="text_img">$143 000 000 only</div>
+                </div>
 
-                    <div class="slider__holder">
-                        <label for="slide-1" class="slider__item slider__item--1 card1">
-                            <div class="slider__item-content">
-                                <p class="heading-3 heading-3--light">.</p>
-                                <p class="heading-3">.</p>
-                                <p class="slider__item-text serif"></p>
-                            </div>
-                        </label>
-
-                        <label for="slide-2" class="slider__item slider__item--2 card2">
-                            <div class="slider__item-content">
-                                <p class="heading-3 heading-3--light">.</p>
-                                <p class="heading-3">.</p>
-                                <p class="slider__item-text serif">
-                                </p>
-                            </div>
-                        </label>
-
-                        <label for="slide-3" class="slider__item slider__item--3 card3">
-                            <div class="slider__item-content">
-                                <p class="heading-3 heading-3--light">.</p>
-                                <p class="heading-3">.</p>
-                                <p class="slider__item-text serif">
-                                </p>
-                            </div>
-                        </label>
-                    </div><!-- slider__holder -->
-                    <div class="bullets">
-                        <label for="slide-1" class="bullets__item bullets__item--1"></label>
-                        <label for="slide-2" class="bullets__item bullets__item--2"></label>
-                        <label for="slide-3" class="bullets__item bullets__item--3"></label>
-
-                    </div> <!-- Bullets -->
-                </section>
+                <div class="mySlides fade">
+                    <img src="https://img.gtsstatic.net/reno/imagereader.aspx?imageurl=https%3A%2F%2Fsir.azureedge.net%2F977i215%2Fcfrwqvbnn7ye4wyf8bbxn0yvc6i215&option=N&h=340&permitphotoenlargement=false" style="width:100%">
+                    <div class="text_img">YOU want it</div>
+                </div>
             </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <br>
+            <div id="our"> </div>
+            <div class="filters_1">
+                <a href="house.html" class="bblock_1">See more</a>
+             </div>
+
+
+
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {slideIndex = 1}
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    setTimeout(showSlides, 5000);
+                }
+            </script>
 
         </main>
     </div>
