@@ -190,34 +190,58 @@
             <div id="cu"> </div>
             <div class='boxes'>
                 <p style = 'font-size: 64px; margin:15px 0px 15px; line-height: 75px'>Contact us</p><br>
-                <div class="form">
-                    <div class="container">
-                        <label for="test">Your name:</label>
-                        <span><input  name="test" id="test" type="text" /></span>
-                    </div>
-                    <div class="container">
-                        <label for="test">Your Phone:</label>
-                        <span><input  name="test" id="test" type="text" /></span>
-                    </div>
-                    <div class="container">
-                        <label for="test">Your e-mail:</label>
-                        <span><input  name="test" id="test" type="text" /></span>
-                    </div>
-                    <p style = 'margin-top: 4%;margin-bottom: 4%;'>Call me at:
-                        <select>
-                            <option value='r1'> 08:00-12:00 </option>
-                            <option value='r2'> 12:00-16:00 </option> 
-                            <option value='r3'> 16:00-20:00 </option>
-                            <option value='r4'> 20:00-24:00 </option> 
-                        </select>
-                    </p>
+                <div class="form" onsubmit="javascript:PopUpShow()">
+                    <form id="mainForm" onsubmit="return false;">
+                        <div class = "container">
+                            <label for="name">Your name:</label>
+                            <span><input
+                                title = "Username should only contain latin letters" 
+                                required 
+                                name="name" 
+                                id="name" 
+                                type="text"  
+                                pattern = "^[A-z]{1,25}$" 
+                                placeholder=" "></span>
+                        </div>
+                        <div class="container">
+                            <label for="phone">Your Phone:</label>
+                            <span><input 
+                                required 
+                                name="phone" 
+                                id="phone" 
+                                type="text" 
+                                pattern = "^[0-9]{10,12}$" 
+                                placeholder=" "
+                                title = "Phone should contain only 10-12 numbers"></span>
+                        </div>
+                        <div class="container">
+                            <label for="mail">Your e-mail:</label>
+                            <span><input 
+                                required 
+                                name="mail" 
+                                id="mail" 
+                                type="email" 
+                                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+                                placeholder=" "
+                                title = "E-mail should look like this: -@-.--"></span>
+                        </div>
+                        <p style = 'margin-top: 4%;margin-bottom: 4%;'>Call me at:
+                            <select>
+                                <option value='r1'> 08:00-12:00 </option>
+                                <option value='r2'> 12:00-16:00 </option> 
+                                <option value='r3'> 16:00-20:00 </option>
+                                <option value='r4'> 20:00-24:00 </option> 
+                            </select>
+                        </p>
+                    
                 </div>
-                <a href= "javascript:PopUpShow()"><input  type="button" value=" Accept " class = 'accept-button'></a>
+                <input  type="submit" value=" Accept " class = 'accept-button'>
             </div>
             <div class="b-popup" id="popup1">
                 <div class="b-popup-content">
                    <p>Successful</p>
                 <a href="javascript:PopUpHide()"><input  type="button" value=" Close " class = 'accept-button'></a>
+                </form>
             </div>
             </div>
         </main>

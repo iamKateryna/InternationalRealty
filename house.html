@@ -10,6 +10,23 @@
           rel="stylesheet">
 </head>
 <body>
+<script>
+function readMore() {
+    var dots = document.getElementById("dots");
+    var more = document.getElementById("more");
+    var btn = document.getElementById("btn");
+
+if (dots.style.display === "none") {
+    dots.style.display="inline";
+    btn.innerHTML="Read more";
+    more.style.display="none";
+} else {
+    dots.style.display="none";
+    btn.innerHTML="Hide";
+    more.style.display="inline";
+    }
+}
+</script>
 <div id="page-container">
     <header class = 'header'>
         <a href="index.html"><img src="images/logo.png" alt="logo"></a>
@@ -48,8 +65,7 @@
             </div>
             <div class = 'boxes'>
                 <p id="box-text">
-                	Fusce eu arcu lacinia, suscipit urna non, varius nulla. Sed non velit egestas, aliquet nisi eget, elementum metus. Aenean sit amet diam et nulla finibus euismod. Aliquam augue augue, ullamcorper non ante in, porta vestibulum nibh. Morbi id luctus velit. Etiam venenatis fermentum pretium. Etiam erat erat, consectetur nec tempus at, varius pulvinar risus. Mauris est ante, sollicitudin vel orci vel, tempor dignissim ante. Vivamus felis nulla, posuere eu lacus a, viverra rhoncus lorem. Pellentesque sed interdum leo. Vivamus tincidunt, mi in tempus hendrerit, arcu ipsum sagittis turpis, eu pellentesque sapien nunc sed sem. Suspendisse faucibus sodales sem, a rutrum ipsum tincidunt eget. Proin quam elit, tristique ac augue faucibus, tempus interdum libero. Ut aliquam ligula nisl, id bibendum arcu iaculis ut. Ut posuere orci felis. Donec vel auctor felis.
-                </p>
+                	Fusce eu arcu lacinia, suscipit urna non, varius nulla. Sed non velit egestas, aliquet nisi eget, elementum metus. Aenean sit amet diam et nulla finibus euismod. Aliquam augue augue, ullamcorper non ante in, porta vestibulum nibh. Morbi id luctus velit. Etiam venenatis fermentum pretium. Etiam erat erat, consectetur nec tempus at, varius pulvinar risus. Mauris est ante, sollicitudin vel orci vel, tempor dignissim ante. Vivamus felis nulla, posuere eu lacus a, viverra rhoncus lorem. Pellentesque sed interdum leo. Vivamus tincidunt, mi in tempus hendrerit, arcu ipsum sagittis<span id="dots">...</span><span id="more"> turpis, eu pellentesque sapien nunc sed sem. Suspendisse faucibus sodales sem, a rutrum ipsum tincidunt eget. Proin quam elit, tristique ac augue faucibus, tempus interdum libero. Ut aliquam ligula nisl, id bibendum arcu iaculis ut. Ut posuere orci felis. Donec vel auctor felis.</span></p><button id="btn" onclick="readMore()">Read more</button>
             </div>
         </main>
     </div>
