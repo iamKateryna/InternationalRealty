@@ -115,51 +115,49 @@
   transition-duration: .25s;
 }
 .menu__btn > span::before {
-    content: '';
-    top: -8px;
+  content: '';
+  top: -8px;
 }
 .menu__btn > span::after {
-    content: '';
-    top: 8px;
+  content: '';
+  top: 8px;
 }
 
 .menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    left: -100%;
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  padding: 80px 0;
 
-    width: 300px;
-    height: 30%;
+  list-style: none;
 
-    margin: 0;
-    padding: 80px 0;
+  background-color: #fff;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 
-    list-style: none;
-
-    background-color: #fff;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-
-    transition-duration: .25s;
+  transition-duration: .25s;
 }
 
 .menu__item {
-    display: block;
-    padding: 12px 24px;
+	display: block;
+	padding: 12px 24px;
 
-    color: #333;
+	color: #333;
 
-    font-family: serif;
-    font-size: 20px;
-    font-weight: 300;
+	font-family: serif;
+	font-size: 20px;
+	font-weight: 300;
 
-    text-decoration: none;
+	text-decoration: none;
 
-    transition-duration: .25s;
+	transition-duration: .25s;
 }
 .menu__item:hover {
-    background-color: #c4c4c4;
+	background-color: #c4c4c4;
 }
 
 .boxes {

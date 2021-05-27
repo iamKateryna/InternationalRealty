@@ -236,7 +236,7 @@
     left: -100%;
 
     width: 300px;
-    height: 30%;
+    height: 400px;
 
     margin: 0;
     padding: 80px 0;
@@ -360,6 +360,7 @@ body {font-family: Verdana, sans-serif;}
 img {vertical-align: middle;}
 
 .slideshow-container {
+    z-index: 0;
     max-width: 600px;
     max-height: 350px;
     position: relative;
